@@ -5,8 +5,8 @@ package com.reymadrid.events
 	
 	public class ImageEvent extends Event
 	{
-		public var image:Bitmap;
 		public static const IMAGE_LOADED:String = "image_loaded";
+		public var image:Bitmap;
 		
 		public function ImageEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
 		{

@@ -1,35 +1,32 @@
 /*
 Rey Madrid
-04/17/13
+04/25/13
 FAT 1304 01
-Assignment #2 - Weather Application
+Assignment #3 - Drawing Application
 */ 
 package
 {
+	import com.reymadrid.app.DrawingApp;
 	import flash.display.Sprite;
-	import com.reymadrid.app.*;
-	import flash.display.*;
 
-	[SWF (height="400", width="600", backgroundColor="0x000000")]
-	
+	[SWF (height="480", width="800")]
 	
 	public class Main extends Sprite
 	{
 		
 		public function Main()
 		{
-			this.init();
-			return;
-		}// end function
+			//initialize Main Drawing Application
+			init();
+		}
 		
 		private function init() : void
 		{
-			var _loc_1:* = new Application();
-			_loc_1.x = stage.stageWidth / 2;
-			_loc_1.y = 5;
-			this.addChild(_loc_1);
-			return;
-		}// end function
-		
+			//display app on screen
+			var app:DrawingApp = new DrawingApp();
+			app.x = -3;
+			app.y = 0;
+			addChild(app);
+		}	
 	}
 }
